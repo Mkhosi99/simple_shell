@@ -193,7 +193,7 @@ void eliminate_comments(char *);
 int shell_hsh(data_sh *, char **);
 int detect_builtin(data_sh *);
 void detect_command(data_sh *);
-void split_command(info_ *);
+void split_command(data_sh *);
 
 /**** parsing.c ****/
 int the_command(data_sh *, char *);
@@ -216,8 +216,8 @@ void put_string(char *);
 int put_character(char);
 
 /**** the_exits.c ****/
-char *copy_the_string(char *, char *, int);
-char *concatenate_the_strings(char *, char *, int);
+char *copy_string(char *, char *, int);
+char *concatenate_strings(char *, char *, int);
 char *the_string_character(char *, char);
 
 /**** split_string.c (aka tokenize) ****/
