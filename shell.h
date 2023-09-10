@@ -34,7 +34,7 @@
 #define FILE_HISTORY	".the_shell_history"
 #define MAXIMUM_HISTORY	4096
 
-extern char **environment;
+extern char **envirnmnt;
 
 /**
  * struct list_string - The singly linked list
@@ -61,7 +61,7 @@ typedef struct list_string
  * @line_add_symbol: If included, input should be added
  * @fle_name: The file name of the program
  * @envir: The linked list copy of environment
- * @environment: The modified custom copy from envir
+ * @envirnmnt: The modified custom copy from envir
  * @histo_node: The node containing the history
  * @otherwise: The alias node aka otherwise
  * @alter_environ: Used if the environment was changed or altered
@@ -76,7 +76,7 @@ typedef struct pass_in_data
 	char *argument;
 	char **argvec;
 	char *trail;
-	char **environment;
+	char **envirnmnt;
 	char *fle_name;
 	char **command_buffer;
 	int buffer_type_command;
