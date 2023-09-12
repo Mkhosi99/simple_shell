@@ -24,8 +24,8 @@
 #define COMMAND_CHAIN	3
 
 /**** To convert the number ****/
-#define CNVRT_LOWERCASE	1
-#define CNVRT_UNSIGNED	2
+#define TRANSFORM_LOWERCASE	1
+#define TRANSFORM_UNSIGNED	2
 
 /**** using getline function ****/
 #define READ_GETLINE	0
