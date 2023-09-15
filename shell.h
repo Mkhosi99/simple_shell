@@ -42,6 +42,7 @@ extern char **envirnmnt;
  * @string: The string
  * @nextNode: Pointer to the next node
  */
+
 typedef struct list_string
 {
 	int int_num;
@@ -71,6 +72,7 @@ typedef struct list_string
  * @assess_fle_descrip: The file description that will read line input
  * @add_up_histo: Counts the history line number
  */
+
 typedef struct pass_in_data
 {
 	char *argument;
@@ -102,6 +104,7 @@ typedef struct pass_in_data
  * @group: The command symbol that is builtin
  * @function: Indicates the function
  */
+
 typedef struct built_already
 {
 	char *group;
