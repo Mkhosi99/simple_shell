@@ -94,7 +94,7 @@ typedef struct pass_in_data
 } data_sh;
 
 #define DATA_START \
-{NULL, NULL, NULL, 0, 0, 0, 0, 0, NULL, NULL, NULL, NULL,NULL, 0, 0, NULL, \
+{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL,NULL, 0, 0, NULL, \
 	0, 0, 0,}
 
 /**
@@ -137,7 +137,7 @@ int the_help(data_sh *);
 
 /**** implement_builtin1.c ****/
 int the_hist(data_sh *);
-int otherwise(data_sh *); /* alias */
+int the_otherwise(data_sh *); /* alias */
 
 /**** fetch_line.c ****/
 ssize_t fetch_input(data_sh *);
@@ -170,16 +170,16 @@ void frees_the_list(list_sh **);
 
 /**** handle_lists1.c ****/
 size_t lenth_of_list(const list_sh *);
-char **convert_list_to_strings(list_sh);
+char **convert_list_to_strings(list_sh *);
 size_t output_list(const list_sh *);
 list_sh *node_starting(list_sh *, char *, char);
-ssize_t fetch_node_indicator(list_sh *, list_sh);
+ssize_t fetch_node_indicator(list_sh *, list_sh *);
 
 /**** variables.c ****/
 int the_chain(data_sh *, char *, size_t *);
 void look_at_chain(data_sh *, char *, size_t *, size_t, size_t);
 int restore_otherwise(data_sh *); /* alias */
-int restore_variables(data_sh);
+int restore_variables(data_sh *);
 int restore_string(char **, char *);
 
 /**** handle_errors1.c ****/
