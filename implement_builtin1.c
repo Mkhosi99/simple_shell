@@ -69,12 +69,13 @@ int outpt_alias(list_sh *nde)
 	{
 		a = the_string_character(nde->string, '=');
 		for (b = nde->string; b <= a; b++)
-			put_character(*b);
-			put_character('\'');
-			put_string(a + 1);
-			put_string("'\n");
-			return (0);
+		put_character(*b);
+		put_character('\'');
+		put_string(a + 1);
+		put_string("'\n");
+		return (0);
 	}
+	return (1);
 }
 
 /**

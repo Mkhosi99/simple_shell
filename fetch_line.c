@@ -10,7 +10,7 @@
 ssize_t insert_buffr(data_sh *data, char **bufr, size_t *rnge)
 {
 	ssize_t x = 0;
-	ssize_t rnge_x = 0;
+	size_t rnge_x = 0;
 
 	if (!*rnge) /* is buffer is empty, it should be filled */
 	{

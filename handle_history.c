@@ -129,7 +129,7 @@ int construct_hist_list(data_sh *data, char *bufr, int sum_line)
 int renumb_hist(data_sh *data)
 {
 	list_sh *nde = data->histo_node;
-	int num, x = 0;
+	int x = 0;
 
 	while (nde)
 	{
