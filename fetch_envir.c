@@ -20,7 +20,9 @@ char **fetch_envir(data_sh *data)
 /**
  * unset_envir - Function removes envirmnt variable
  * @data: Parameter structure with arguments
- * @param: Indicates string environment and variable property
+ * @param: Indicates string environment and
+ * variable property
+ *
  * Return: 1 is returned if deleted and zero if otherwise
  */
 int unset_envir(data_sh *data, char *param)

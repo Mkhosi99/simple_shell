@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * string_tokenize1 - function will split string into words
+ * string_tokenize1 - the function will split string into words
  * @strng: string serving as input
  * @dlm: string serving as delimeter
  * Return: will pointers to the array with strings or NULL if not
@@ -51,4 +51,4 @@ char **string_tokenize1(char *strng, char *dlm)
 }
 
 /**
- * string_tokenize2 function splits string into word
+ * string_tokenize2 function splits string into the word

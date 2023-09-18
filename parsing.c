@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * the_command - function determines if file is executable
+ * the_command - the function determines if file is
+ * executable
  * @data: the param
  * @trail: indicates path to file
  * Return: will be 1 else 0 if not

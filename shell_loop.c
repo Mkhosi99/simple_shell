@@ -47,10 +47,11 @@ int shell_hsh(data_sh *data, char **arvec)
  * detect_builtin - function will find a builtin command
  * @data: the param and return data structure
  * Return: will be -1 if builtin is not detected
- *         and 0 if builtin is executed
+ *         and 0 if builtin is successfully executed
  *         will be 1 if builtin not executed
  *         and 2 if builtin hints exit()
  */
+
 int detect_builtin(data_sh *data)
 {
 	int x, bltin = -1;

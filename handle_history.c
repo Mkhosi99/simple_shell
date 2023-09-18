@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * fetch_hist_fle - function fetches history file
+ * fetch_hist_fle - thefunction fetches history file
  * @data: indicates the parameter
  *
  * Return: indicates the string thas has history file
@@ -28,6 +28,7 @@ char *fetch_hist_fle(data_sh *data)
 /**
  * note_hist - function makes or appends existing file
  * @data: indicates the parameter
+ *
  * Return: return 1 if working or -1 otherwise
  */
 int note_hist(data_sh *data)

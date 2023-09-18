@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * erase_data - Fuction creates and initializes data_sh structure
+ * erase_data - the fuction creates and initializes
+ * data_sh structure
  * @data: The data_sh structure address
  */
 void erase_data(data_sh *data)

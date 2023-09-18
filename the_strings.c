@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * the_string_lenth - functions returns length of string
- * @strng: the string to assess
+ * the_string_lenth - the functions returns length of string
+ * @strng: the string to access
  * Return: number of string length will be returned
  */
 int the_string_lenth(char *strng)
@@ -18,7 +18,7 @@ int the_string_lenth(char *strng)
 }
 
 /**
- * the_string_compare - function compares two strings
+ * the_string_compare - the function compares two strings
  * @strng1: indicates the first string
  * @strng2: indicates the second string
  * Return: -1 if strng1 < strng2 and 1 if strng1 > strng2

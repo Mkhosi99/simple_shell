@@ -5,6 +5,7 @@
  * @pter: this will address pointer to free
  * Return: will return 1 if free or 0 if not
  */
+
 int makefree(void **pter)
 {
 	if (pter && *pter)
