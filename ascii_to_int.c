@@ -2,7 +2,7 @@
 
 /**
  * associate - Will return if the shell is interactive
- * @data: The address of the struct
+ * @data: address of the struct
  *
  * Return: returns 1 if it interactive, or zero otherwise
  */
