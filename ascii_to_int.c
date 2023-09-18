@@ -19,7 +19,7 @@ int associate(data_sh *data)
 
 /**
  * the_dlm - Determines if the character is a delimiter
- * @x: The character to look at
+ * @x: character to look at
  * @dlm: Indicates the delimiter string
  *
  * Return: returns 1 if it is true or 0 if it is false
