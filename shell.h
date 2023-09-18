@@ -38,7 +38,7 @@ extern char **envirnmnt;
 
 /**
  * struct list_string - The singly linked list
- * @number: Number field
+ * @int_num: Number field
  * @string: The string
  * @nextNode: Pointer to the next node
  */
@@ -94,7 +94,7 @@ typedef struct pass_in_data
 } data_sh;
 
 #define DATA_START \
-{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL,NULL, 0, 0, NULL, \
+{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
 	0, 0, 0,}
 
 /**
@@ -125,7 +125,7 @@ char *fetch_hist_fle(data_sh *data);
 int note_hist(data_sh *data);
 int look_thru_hist(data_sh *data);
 int construct_hist_list(data_sh *data, char *buffer, int countline);
-int renumb_hist(data_sh *data); /* renumbers history */
+int renumb_hist(data_sh *data);
 
 /**** handle_memory.c ****/
 int makefree(void **);
@@ -137,7 +137,7 @@ int the_help(data_sh *);
 
 /**** implement_builtin1.c ****/
 int the_hist(data_sh *);
-int the_otherwise(data_sh *); /* alias */
+int the_otherwise(data_sh *);
 
 /**** fetch_line.c ****/
 ssize_t fetch_input(data_sh *);
@@ -178,7 +178,7 @@ ssize_t fetch_node_indicator(list_sh *, list_sh *);
 /**** variables.c ****/
 int the_chain(data_sh *, char *, size_t *);
 void look_at_chain(data_sh *, char *, size_t *, size_t, size_t);
-int restore_otherwise(data_sh *); /* alias */
+int restore_otherwise(data_sh *);
 int restore_variables(data_sh *);
 int restore_string(char **, char *);
 
