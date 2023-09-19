@@ -34,7 +34,11 @@
 #define FILE_HISTORY	".the_shell_history"
 #define MAXIMUM_HISTORY	4096
 
-extern char **envirnmnt;
+#define DATA_START \
+{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
+		0, 0, 0}
+
+extern char **environ;
 
 /**
  * struct list_string - The singly linked list
@@ -61,7 +65,7 @@ typedef struct list_string
  * @line_add_symbol: If included, input should be added
  * @fle_name: The file name of the program
  * @envir: The linked list copy of environment
- * @envirnmnt: The modified custom copy from envir
+ * @environ: The modified custom copy from envir
  * @histo_node: The node containing the history
  * @otherwise: The alias node aka otherwise
  * @alter_environ: Used if the environment was changed or altered
@@ -76,7 +80,7 @@ typedef struct pass_in_data
 	char *argument;
 	char **argvec;
 	char *trail;
-	char **envirnmnt;
+	char **environ;
 	char *fle_name;
 	char **command_buffer;
 	int buffer_type_command;
@@ -92,10 +96,6 @@ typedef struct pass_in_data
 	list_sh *histo_node;
 	list_sh *otherwise;
 } data_sh;
-
-#define DATA_START \
-{NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
-	0, 0, 0,}
 
 /**
  * struct built_already - Hads the builtin string and the functions related
