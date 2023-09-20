@@ -47,7 +47,7 @@ char *fetch_envir(char *env_label)
 {
 	int x = 0, y, labl;
 
-	labl = _strlen(env_label);
+	labl = mk_strnglenth(env_label);
 	while (environ[x] != NULL)
 	{
 		for (y = 0; environ[x][y] && y < labl; y++)
@@ -79,10 +79,10 @@ char *fetch_comnd(char *comnd)
 	tkn = strtok(trail, ":");
 	while (tkn)
 	{
-		comnd_trail = malloc((_strlen(tkn) + _strlen(comnd) + 2) * sizeof(char));
-		_strcpy(comnd_trail, tkn);
-		_strcat(comnd_trail, "/");
-		_strcat(comnd_trail, comnd);
+		comnd_trail = malloc((mk_strnglenth(tkn) + mk_strnglenth(comnd) + 2) * sizeof(char));
+		mk_strngcopy(comnd_trail, tkn);
+		mk_strngcncat(comnd_trail, "/");
+		mk_strngcncat(comnd_trail, comnd);
 		if (stat(comnd_trail, &st) == 0)
 			return (comnd_trail);
 		free(comnd_trail);
@@ -119,7 +119,7 @@ void ext_sh(char **tkn, char **argve, int dash, int condition, char *bufr)
 {
 	int cde;
 
-	if (_strcmp(tkn[0], "exit") == 0)
+	if (mk_strngcmpre(tkn[0], "exit") == 0)
 	{
 		if (tkn[1])
 		{

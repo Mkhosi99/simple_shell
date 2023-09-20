@@ -2,12 +2,12 @@
 
 
 /**
- * _strlen - function will return length of a string
+ * mk_strnglenth - function will return length of a string
  * @a: indicates the string to be used
  *
  * Return: length of string will be returned
  */
-int _strlen(const char *a)
+int mk_strnglenth(const char *a)
 {
 	int x = 0;
 
@@ -19,14 +19,14 @@ int _strlen(const char *a)
 }
 
 /**
- * *_strcpy -  function will copy a string
+ * *mk_strngcopy -  function will copy a string
  * @end: indicates the end of string
  * @start: indictates the start of string
  *
  * Return: end pointer value will be returned
  */
 
-char *_strcpy(char *end, char *start)
+char *mk_strngcopy(char *end, char *start)
 {
 	int x = 0;
 
@@ -40,13 +40,13 @@ char *_strcpy(char *end, char *start)
 }
 
 /**
- * *_strcat - function will concatenate two strings
+ * *mk_strngcncat - function will concatenate two strings
  * @end: indicates the end of string
  * @start: indicates the start of string
  *
  * Return: end pointer will be returned as result
  */
-char *_strcat(char *end, char *start)
+char *mk_strngcncat(char *end, char *start)
 {
 	int x, y;
 
@@ -66,13 +66,13 @@ char *_strcat(char *end, char *start)
 }
 
 /**
- * _strcmp - function will compare two strings
+ * mk_strngcmpre - function will compare two strings
  * @str1: indicates the first string.
  * @str2: indicates the second string.
  *
  * Return: int result will be returned
  */
-int _strcmp(char *str1, char *str2)
+int mk_strngcmpre(char *str1, char *str2)
 {
 	while (*str1 != '\0' && *str2 != '\0')
 	{

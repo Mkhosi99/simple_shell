@@ -10,8 +10,8 @@ void output_envir(char **envopt)
 
 	while (envopt[x])
 	{
-		_puts(envopt[x]);
-		_putchar('\n');
+		mk_writes(envopt[x]);
+		mk_writechar('\n');
 		x++;
 	}
 }
@@ -25,12 +25,12 @@ void output_envir(char **envopt)
 */
 void not_detected(char *argve, int dash, char *comnd)
 {
-	_eputs(argve);
-	_eputs(": ");
+	mk_swrites(argve);
+	mk_swrites(": ");
 	mk_itoa(dash);
-	_eputs(": ");
-	_eputs(comnd);
-	_eputs(": not found\n");
+	mk_swrites(": ");
+	mk_swrites(comnd);
+	mk_swrites(": not found\n");
 }
 
 /**
@@ -42,12 +42,12 @@ void not_detected(char *argve, int dash, char *comnd)
 */
 void invalid_numb(char *argve, int dash, char *numbr)
 {
-	_eputs(argve);
-	_eputs(": ");
+	mk_swrites(argve);
+	mk_swrites(": ");
 	mk_itoa(dash);
-	_eputs(": exit: Invalid number: ");
-	_eputs(numbr);
-	_eputs("\n");
+	mk_swrites(": exit: Invalid number: ");
+	mk_swrites(numbr);
+	mk_swrites("\n");
 }
 
 /**
@@ -60,10 +60,10 @@ void invalid_numb(char *argve, int dash, char *numbr)
 
 void error_perm(char *argve, int dash, char *comnd)
 {
-	_eputs(argve);
-	_eputs(": ");
+	mk_swrites(argve);
+	mk_swrites(": ");
 	mk_itoa(dash);
-	_eputs(": ");
-	_eputs(comnd);
-	_eputs(": Permission denied\n");
+	mk_swrites(": ");
+	mk_swrites(comnd);
+	mk_swrites(": Permission denied\n");
 }

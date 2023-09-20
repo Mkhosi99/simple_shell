@@ -54,6 +54,6 @@ void mk_itoa(int x)
 	}
 
 	for (m -= 1; m >= 0; m--)
-		_eputchar(str[m]);
+		mk_cwritechar(str[m]);
 	free(str);
 }

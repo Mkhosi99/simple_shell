@@ -10,7 +10,7 @@
 */
 int comnd_envir(char **tkn, char **envir, char *bufr)
 {
-	if (_strcmp(tkn[0], "env") == 0)
+	if (mk_strngcmpre(tkn[0], "env") == 0)
 	{
 		output_envir(envir);
 		free(tkn);

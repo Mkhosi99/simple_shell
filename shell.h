@@ -23,10 +23,10 @@ void error_perm(char *argve, int dash, char *comnd);
 void mk_itoa(int x);
 int mk_atoi(const char *str);
 
-void _eputchar(char a);
-void _eputs(char *str);
-void _putchar(char a);
-void _puts(char *str);
+void mk_cwritechar(char a);
+void mk_swrites(char *strng);
+void mk_writechar(char a);
+void mk_writes(char *strng);
 
 char **split_str(char *strng);
 char *fetch_comnd(char *comnd);
@@ -38,9 +38,9 @@ char **fetch_tkn(char **bufr, int condition);
 int exec_comnd(char **tkn, char **argvev, int dash, char **envir);
 
 
-int _strlen(const char *a);
-char *_strcpy(char *end, char *start);
-char *_strcat(char *end, char *start);
-int _strcmp(char *str1, char *str2);
+int mk_strnglenth(const char *a);
+char *mk_strngcopy( char *end, char *start);
+char *mk_strngcncat(char *end, char *start);
+int mk_strngcmpre(char *str1, char *str2);
 
 #endif

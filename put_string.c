@@ -2,20 +2,20 @@
 
 
 /**
- * _putchar - function will write the char to stdout
+ * mk_writechar - function will write the char to stdout
  * @a: will be the char to print
  */
-void _putchar(char a)
+void mk_writechar(char a)
 {
 	write(1, &a, 1);
 }
 
 /**
- * _puts - function will print a string
+ * mk_writes - function will print a string
  *
  * @str: indicates the characters used
  */
-void _puts(char *str)
+void mk_writes(char *str)
 {
 	int x = 0;
 
@@ -24,27 +24,27 @@ void _puts(char *str)
 
 	while (str[x])
 	{
-		_putchar(str[x]);
+		mk_writechar(str[x]);
 		x++;
 	}
 }
 
 /**
- * _eputchar - function will write char to stderr
+ * mk_cwritechar - function will write char to stderr
  * @a: indicates the character to be printed
  */
-void _eputchar(char a)
+void mk_cwritechar(char a)
 {
 	if (a)
 		write(2, &a, 1);
 }
 
 /**
- * _eputs - function will print string to stderr
+ * mk_swrites - function will print string to stderr
  *
  * @str: indicates the characters used
  */
-void _eputs(char *str)
+void mk_swrites(char *str)
 {
 	int x = 0;
 
@@ -53,7 +53,7 @@ void _eputs(char *str)
 
 	while (str[x] != '\0')
 	{
-		_eputchar(str[x]);
+		mk_cwritechar(str[x]);
 		x++;
 	}
 }
