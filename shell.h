@@ -35,7 +35,7 @@ void release_tkn(char **tkn);
 void ext_sh(char **tkn, char **argve, int dash, int condition, char *bufr);
 int comnd_envir(char **tkn, char **envir, char *bufr);
 char **fetch_tkn(char **bufr, int condition);
-int exec_comnd(char **tkn, char **argvev, int dash, char **envir);
+int exec_comnd(char **tkn, char **argve, int dash, char **envir);
 
 
 int mk_strnglenth(const char *a);
