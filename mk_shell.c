@@ -135,7 +135,7 @@ void ext_sh(char **tkn, char **arv, int dsh, int stats, char *bufr)
 			{
 				free(tkn);
 				free(bufr);
-				exiti(232);
+				exit(232);
 			}
 			else
 			{
