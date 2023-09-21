@@ -70,9 +70,9 @@ char *g_evr(char *env_lbl)
 char *g_comnd(char *comnd)
 {
 	char *p, *t, *cmd;
-	struct stat ts;
+	struct stat st;
 
-	if (stat(comnd, &ts) == 0)
+	if (stat(comnd, &st) == 0)
 		return (comnd);
 
 	p = g_evr("PATH");
@@ -83,7 +83,7 @@ char *g_comnd(char *comnd)
 		scopy(cmd, t);
 		scncat(cmd, "/");
 		scncat(cmd, comnd);
-		if (stat(cmd, &ts) == 0)
+		if (stat(cmd, &st) == 0)
 			return (cmd);
 		free(cmd);
 		t = strtok(NULL, ":");
